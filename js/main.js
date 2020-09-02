@@ -1,4 +1,4 @@
-var mainApp = {};
+﻿var mainApp = {};
 (function () {
     var currentUser = null;
     appFB.auth().onAuthStateChanged(function (user) {
