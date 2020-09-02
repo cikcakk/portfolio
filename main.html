@@ -1,129 +1,54 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <title>Document</title>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./css/styles.css" rel="stylesheet" />
-        <!-- Fonts CSS-->
-        <link rel="stylesheet" href="./css/heading.css" />
-        <link rel="stylesheet" href="./css/body.css" />
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-    
-        <link rel="stylesheet" href="./css/main.css">
-
-    </head>
-    <body>
-        <nav
-            class="navbar navbar-expand-lg bg-secondary fixed-top"
-            id="mainNav"
-        >
-            <div class="container">
-                <a
-                    class="navbar-brand js-scroll-trigger"
-                    href="./index.html#page-top"
-                    >CIKCAKK-Tanfolyam</a
-                >
-                <button
-                    class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    Menu <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a
-                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                href="./index.html#portfolio"
-                                >PORTFOLIO</a
-                            >
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a
-                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                href="./index.html#about"
-                                >ABOUT</a
-                            >
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a
-                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                href="./index.html#contact"
-                                >CONTACT</a
-                            >
-                        </li>
-                        
-                            
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <div class="main-container">
-                    <div class="left-panel">
-                        <div class="add-message-form">
-                            <div class="title-addmessage-style">
-                                <h1 class="text-color-blue" style="border-bottom: 3px solid #304578;">Add Message</h1>
-                            </div>
-                            <div>
-                                <h3 class="text-color-blue">User Name</h3>
-                                <input class="input-style" style="height: 25px;" type="text" id="input-userName" name="userName" value="" />
-                            </div>
-                            <div>
-                                <h3 class="text-color-blue">Message</h3>
-                                <textArea class="input-style" id="input-message" rows="15" cols="40"></textArea>
-                            </div>
-                            <div>
-                                <button onclick="mainApp.sendMessage()" class="message-button">send</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-panel" id="right-panel">
-                        <!-- inject message container -->
-                        <!-- <div class="message-container">
-                            <div class="header-message">
-                                <h3 class="message-header-username">Gabriel</h3>
-                                <h3 class="message-header-x" title="Delete Message" id="messageId" onclick="mainApp.deletemessage()">X</h3>
-                            </div>
-                            <div class="center-text">
-                                <h3 class="center-text">this is the message came from the Gabriel</h3>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="footer-area">
-                    <div><button class="nav-text-style" onclick="location.replace('./partials/admin.html')">Admin</button></div>
-                    <div><button class="nav-text-style" onclick="mainApp.logout()">Logout</button></div>
-                    
-                </div>
-    </header>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INDEX</title>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="./js/firebase.js"></script>
     <script src="./js/apiService.js"></script>
     <script src="./js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="./assets/mail/jqBootstrapValidation.js"></script>
-        <script src="./assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
+    <link href="./style/main.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <div class="add-message-form">
+                <div class="title-addmessage-style">
+                    <h1 class="text-color-blue" style="border-bottom: 3px solid #304578;">Add Message</h1>
+                </div>
+                <div>
+                    <h3 class="text-color-blue">User Name</h3>
+                    <input class="input-style" style="height: 25px;" type="text" id="input-userName" name="userName" value="" />
+                </div>
+                <div>
+                    <h3 class="text-color-blue">Message</h3>
+                    <textArea class="input-style" id="input-message" rows="15" cols="40"></textArea>
+                </div>
+                <div>
+                    <button onclick="mainApp.sendMessage()" class="message-button">send</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel" id="right-panel">
+            <!-- inject message container -->
+            <!-- <div class="message-container">
+                <div class="header-message">
+                    <h3 class="message-header-username">Gabriel</h3>
+                    <h3 class="message-header-x" title="Delete Message" id="messageId" onclick="mainApp.deletemessage()">X</h3>
+                </div>
+                <div class="center-text">
+                    <h3 class="center-text">this is the message came from the Gabriel</h3>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="footer-area">
+        <div><button class="nav-text-style" onclick="location.replace('./partials/admin.html')">Admin</button></div>
+        <div><button class="nav-text-style" onclick="mainApp.logout()">Logout</button></div>
         
-    </body>
+    </div>
+</body>
 </html>
