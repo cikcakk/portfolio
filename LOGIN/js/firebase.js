@@ -1,4 +1,4 @@
-var appFB = {};
+﻿var appFB = {};
 (function () {
     // Make sure you replace this code with youre api key, that you get from firebase
     var config = {

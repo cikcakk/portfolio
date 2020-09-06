@@ -1,16 +1,12 @@
-var apiService = {};
+﻿var apiService = {};
 (function () {
     function fnCreate(path, body, callback) {
         appFB.database().ref(path).set(body, callback);
     }
     function fnRead(path, successCallback, errorCallback) {
-        appFB
-            .database()
-            .ref(path)
-            .once("value")
-            .then(successCallback, errorCallback);
+        appFB.database().ref(path).once("value").then(successCallback, errorCallback);
     }
-    function fnAutoRead(path, successCallback, errorCallback) {
+    function fnAutoRead(path, successCallback, errorCallback){
         appFB.database().ref(path).on("value", successCallback, errorCallback);
     }
     function fnUpdate(path, body, callback) {
@@ -25,4 +21,4 @@ var apiService = {};
     apiService.autoRead = fnAutoRead;
     apiService.update = fnUpdate;
     apiService.delete = fnDelete;
-})();
+})()
