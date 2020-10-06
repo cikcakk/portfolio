@@ -1,13 +1,13 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-    apiKey: "AIzaSyBJmO-FDRlAtzLJEeecrfd873CRLtqmy0U",
-    authDomain: "form-adatok.firebaseapp.com",
-    databaseURL: "https://form-adatok.firebaseio.com",
-    projectId: "form-adatok",
-    storageBucket: "form-adatok.appspot.com",
-    messagingSenderId: "165461629532",
-    appId: "1:165461629532:web:e10b7bc357ca3ffb802499",
-    measurementId: "G-SW8G2LGTN1",
+  apiKey: "AIzaSyAPQK7DPjhLE1BATzDClkJjrujNQrAKZP8",
+  authDomain: "cikcakk-crud.firebaseapp.com",
+  databaseURL: "https://cikcakk-crud.firebaseio.com",
+  projectId: "cikcakk-crud",
+  storageBucket: "cikcakk-crud.appspot.com",
+  messagingSenderId: "346248215389",
+  appId: "1:346248215389:web:1e5c871cb7784b8f9606b4",
+  measurementId: "G-GF7FYLDVRG"
 };
 firebase.initializeApp(config);
 
