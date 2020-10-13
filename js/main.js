@@ -1,13 +1,13 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-  apiKey: "AIzaSyAPQK7DPjhLE1BATzDClkJjrujNQrAKZP8",
-  authDomain: "cikcakk-crud.firebaseapp.com",
-  databaseURL: "https://cikcakk-crud.firebaseio.com",
-  projectId: "cikcakk-crud",
-  storageBucket: "cikcakk-crud.appspot.com",
-  messagingSenderId: "346248215389",
-  appId: "1:346248215389:web:1e5c871cb7784b8f9606b4",
-  measurementId: "G-GF7FYLDVRG"
+  apiKey: "AIzaSyCV4Og8CIaxlolFhS8utpOSRczjrWLI-L0",
+    authDomain: "firstproject-crud.firebaseapp.com",
+    databaseURL: "https://firstproject-crud.firebaseio.com",
+    projectId: "firstproject-crud",
+    storageBucket: "firstproject-crud.appspot.com",
+    messagingSenderId: "486599286694",
+    appId: "1:486599286694:web:ad7e2b8dde05c010493967",
+    measurementId: "G-W8TVCZDBGE"
 };
 firebase.initializeApp(config);
 
