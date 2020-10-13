@@ -2,14 +2,14 @@
 (function () {
     // Make sure you replace this code with youre api key, that you get from firebase
     var config = {
-        apiKey: "AIzaSyCV4Og8CIaxlolFhS8utpOSRczjrWLI-L0",
-    authDomain: "firstproject-crud.firebaseapp.com",
-    databaseURL: "https://firstproject-crud.firebaseio.com",
-    projectId: "firstproject-crud",
-    storageBucket: "firstproject-crud.appspot.com",
-    messagingSenderId: "486599286694",
-    appId: "1:486599286694:web:7f2ae63da5937176493967",
-    measurementId: "G-FNKRZ00FWL"
+        apiKey: "AIzaSyBa8dTFYyxUkWQz-VYXZbm4liUCuq91_jc",
+    authDomain: "login-uzenet.firebaseapp.com",
+    databaseURL: "https://login-uzenet.firebaseio.com",
+    projectId: "login-uzenet",
+    storageBucket: "login-uzenet.appspot.com",
+    messagingSenderId: "790094741391",
+    appId: "1:790094741391:web:0741b22d766192634895fa",
+    measurementId: "G-64W02E48SD"
     };
     firebase.initializeApp(config);
     appFB = firebase;
